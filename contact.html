@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | K12 Resource Partners</title>
+    <meta name="description" content="Contact K12 Resource Partners to discuss education solutions for your school or district." />
+    <meta property="og:title" content="Contact | K12 Resource Partners" />
+    <meta property="og:description" content="Reach out to discuss K-12 solutions and partnership opportunities." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html" class="brand" aria-label="K12 Resource Partners home">
+          <span class="brand-mark">K12</span>
+          <span class="brand-word">Resource Partners</span>
+        </a>
+
+        <button class="nav-toggle" aria-expanded="false" aria-controls="site-navigation" aria-label="Toggle navigation">
+          Menu
+        </button>
+
+        <nav class="main-nav" id="site-navigation" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="solutions.html">Solutions</a>
+          <a href="partners.html">Partners</a>
+          <a href="about.html">About</a>
+          <a href="contact.html" class="is-current">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <p class="eyebrow">Contact</p>
+          <h1>Let's Talk About How We Can Help</h1>
+          <p>
+            Whether you're a school exploring solutions or an education company looking to expand your reach in K-12,
+            we'd like to hear from you.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container contact-layout">
+          <aside class="contact-card" aria-label="Contact information">
+            <p class="eyebrow">Get in touch</p>
+            <h2>Reach out</h2>
+            <ul class="contact-list">
+              <li>
+                <strong>Email</strong>
+                <a href="mailto:info@k12resourcepartners.com">info@k12resourcepartners.com</a>
+              </li>
+              <li>
+                <strong>Focus</strong>
+                K-12 school solutions, education providers, and strategic partnerships
+              </li>
+            </ul>
+          </aside>
+
+          <div class="form-card">
+            <form id="contact-form" aria-label="Contact form" action="https://formspree.io/f/mkjwdddn" method="POST">
+              <input type="hidden" name="_subject" value="K12 Resource Partners Website Inquiry" />
+              <input
+                type="text"
+                name="_gotcha"
+                tabindex="-1"
+                autocomplete="off"
+                aria-hidden="true"
+                style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;pointer-events:none;"
+              />
+
+              <div class="form-grid">
+                <div class="field full">
+                  <label for="inquiry-type">I am contacting you about:</label>
+                  <select id="inquiry-type" name="inquiry_type" required>
+                    <option value="">Select an option</option>
+                    <option value="A solution for my school/organization">A solution for my school/organization</option>
+                    <option value="A reseller or partnership opportunity">A reseller or partnership opportunity</option>
+                    <option value="General inquiry">General inquiry</option>
+                  </select>
+                </div>
+
+                <div class="field">
+                  <label for="name">Name</label>
+                  <input id="name" name="name" type="text" placeholder="Your full name" required />
+                </div>
+
+                <div class="field">
+                  <label for="organization">School/Organization</label>
+                  <input id="organization" name="organization" type="text" placeholder="School or district name" required />
+                </div>
+
+                <div class="field">
+                  <label for="email">Email</label>
+                  <input id="email" name="email" type="email" placeholder="name@example.com" required />
+                </div>
+
+                <div class="field">
+                  <label for="phone">Phone (optional)</label>
+                  <input id="phone" name="phone" type="tel" placeholder="(555) 123-4567" />
+                </div>
+
+                <div class="field full">
+                  <label for="subject">What can we help with?</label>
+                  <input id="subject" name="subject" type="text" placeholder="Briefly describe your needs" required />
+                </div>
+
+                <div class="field full">
+                  <label for="message">Message</label>
+                  <textarea id="message" name="message" placeholder="Tell us more about your school, goals, or questions." required></textarea>
+                </div>
+              </div>
+
+              <div class="hero-actions" style="margin-top: 1.5rem;">
+                <button type="submit">Send Message</button>
+              </div>
+
+              <div class="form-status" aria-live="polite" hidden>
+                <p class="form-status-title">Thanks! Your message has been sent.</p>
+                <p>We'll be in touch soon.</p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" style="padding-top:0;">
+        <div class="container" style="display:grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap:1.5rem;">
+          <article class="audience-card">
+            <p class="eyebrow">For schools</p>
+            <h3>Looking for information about a solution?</h3>
+            <p>School leaders can contact K12 Resource Partners to learn more about the products and services offered through our education partners.</p>
+          </article>
+
+          <article class="audience-card" id="partner">
+            <p class="eyebrow">For education companies</p>
+            <h3>Interested in partnering with K12 Resource Partners?</h3>
+            <p>Education technology, curriculum, software, AI, service, and other K-12 providers can connect with us to discuss reseller and sales partnership opportunities in the K-12 market.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="index.html" class="brand" aria-label="K12 Resource Partners home">
+              <span class="brand-mark">K12</span>
+              <span class="brand-word">Resource Partners</span>
+            </a>
+            <p>Connecting Schools With the Right Solutions</p>
+          </div>
+
+          <div>
+            <h3>Explore</h3>
+            <div class="footer-links">
+              <a href="index.html">Home</a>
+              <a href="solutions.html">Solutions</a>
+              <a href="partners.html">Partners</a>
+            </div>
+          </div>
+
+          <div>
+            <h3>Company</h3>
+            <div class="footer-links">
+              <a href="about.html">About</a>
+              <a href="contact.html">Contact</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-meta">
+          <p>Copyright &copy; <span id="year"></span> K12 Resource Partners. All rights reserved.</p>
+          <p>K12 Resource Partners is a fictitious name of Education Device Coverage L.L.C.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
